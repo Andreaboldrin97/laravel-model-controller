@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <header>
+        @include('include.header')
+    </header>
     <ul>
         @forelse ($movies as $movie)
             <li>
