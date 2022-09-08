@@ -5,26 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Netflix</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
     <header>
         @include('include.header')
     </header>
-    <ul>
-        @forelse ($movies as $movie)
-            <li>
-                {{ $movie->id }} - {{ $movie->title }} - {{ $movie->original_title }} - {{ $movie->nationality }} -
-                {{ $movie->date }} - {{ $movie->vote }}
-            </li>
 
-        @empty
-            <li>
-                nessun film trovato
-            </li>
-        @endforelse
-    </ul>
+    <main>
+        <div class="bg-dark">
+            @yield('main-content')
+        </div>
+    </main>
+
 
 </body>
 

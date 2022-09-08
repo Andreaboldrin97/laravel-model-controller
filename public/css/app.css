@@ -10855,3 +10855,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header {
+  height: 30px;
+}
+header .img-brand {
+  width: 100%;
+  height: 30px;
+}
