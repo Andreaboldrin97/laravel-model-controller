@@ -14,4 +14,12 @@ class MovieController extends Controller
         // RITORNO CON LA FUNZIONE VIEW GLI ELEMENTI CHE BISOGNO VISUALIIZARE
         return view("listMovie", compact("movies"));
     }
+
+    public function bestFilm()
+    {
+        // ASSEGNO UNA VARIABILE AL DB CON ::ALL() SELEZIONO TUTTE LE TABELLE
+        $bestMovies = Movie::where('vote', '>', 8)->get();
+        // RITORNO CON LA FUNZIONE VIEW GLI ELEMENTI CHE BISOGNO VISUALIIZARE
+        return view("bestMovie", compact("bestMovies"));
+    }
 }

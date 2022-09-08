@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+<nav class="navbar navbar-dark navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand " href="#">
             <img class="img-brand" src="https://www.ilsipontino.net/wp-content/uploads/2022/04/Netflix.png" alt="">
@@ -16,7 +16,7 @@
                     <a class="nav-link" href="{{ route('ListFilm') }}">List Film</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Miglior Film</a>
+                    <a class="nav-link" href="{{ route('BestFilm') }}">Miglior Film</a>
                 </li>
             </ul>
         </div>

@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
-<body>
+<body class="bg-dark">
     <header>
         @include('include.header')
     </header>
 
     <main>
-        <div class="bg-dark">
+        <div>
             @yield('main-content')
         </div>
     </main>

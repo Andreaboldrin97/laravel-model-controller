@@ -10856,7 +10856,7 @@ textarea.form-control-lg {
   }
 }
 header {
-  height: 30px;
+  background-color: black;
 }
 header .img-brand {
   width: 100%;

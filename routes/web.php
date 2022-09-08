@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/films', "MovieController@index")->name('ListFilm');
+Route::get('/bestFilms', "MovieController@bestFilm")->name('BestFilm');
