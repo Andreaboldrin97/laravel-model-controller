@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    LISTA FILM
     <ul>
         @forelse ($movies as $movie)
             <li>
