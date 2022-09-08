@@ -12,6 +12,6 @@ class MovieController extends Controller
         // ASSEGNO UNA VARIABILE AL DB CON ::ALL() SELEZIONO TUTTE LE TABELLE
         $movies = Movie::all();
         // RITORNO CON LA FUNZIONE VIEW GLI ELEMENTI CHE BISOGNO VISUALIIZARE
-        return view("MovieController", compact("movies"));
+        return view("layout.MovieController", compact("movies"));
     }
 }
